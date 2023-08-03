@@ -1,0 +1,16 @@
+@import '../../../styles/app';
+
+// .v-main__wrap {
+//   padding: 70px $content-padding $content-padding;
+// }
+.content {
+  background-color: #fff;
+  .content {
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+  }
+}
+.v-btn:not(.v-btn--round).v-size--default {
+  height:37px!important;
+}

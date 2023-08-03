@@ -1,0 +1,415 @@
+/*------------------------------------------------------------------
+Last change:    12/06/21 [fixed Float bug, vf]
+
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+   01. Home CSS
+==========================================
+*/
+
+.home{
+    height: 70vh;
+    width: 100%;
+  }
+  .home-carousel .home-bg {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+  }
+  .home-carousel .home-carousel-wraper {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 45px;
+  }
+  .home-carousel p,
+  .home-carousel h3 {
+    color: #000;
+  }
+  .home-carousel1 .home-bg {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    top: 30px;
+    background-color: #000;
+  }
+  .home-carousel1 p,
+  .home-carousel1 h3 {
+    color:#fff;
+  }
+  .home-carousel1 .home-carousel-wraper-img img {
+    max-width: 60% !important;
+  }
+  
+  
+  /* .home-carousel1 .home-carousel-wraper{} */
+  .home-carousel-wraper .pt-15{
+    padding-top: 15px;
+  }
+  .home-carousel-wraper .shop-btn {
+    background: #05054b;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #05054b;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .home-carousel-wraper .shop-btn1 {
+    background: #fff;
+    color: #05054b;
+    padding: 10px 15px;
+    border: 2px solid #05054b;
+    border-radius: 5px;
+  }
+  .home-carousel-wraper  .py-15{
+    padding: 20px 0px 15px;
+  }
+  
+  /* .banner-carousel.owl-carousel .owl-item img {
+    display:inline-block;
+    max-width: 100% !important;
+  } */
+  .banner-carousel.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+  }
+  
+  .banner-carousel button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+  }
+  .banner-carousel button.owl-next {
+    position: absolute;
+    top: 50%;
+    right:20px;
+  }
+  /* .owl-item.active {
+    margin-right: 0px !important;
+  } */
+  .banner-carousel.owl-carousel .owl-nav button.owl-next,
+  .banner-carousel.owl-carousel .owl-nav button.owl-prev,
+  .banner-carousel.owl-carousel button.owl-dot {
+    background: #fff;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    height:45px;
+    width: 45px;
+    line-height: 1.5;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 4px -15px rgba(0, 0, 0, 0.2);
+  }
+  .banner-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #fff;
+    color: #05054b;
+    text-decoration: none;
+  }
+  .banner-carousel .home-carousel-wraper-img img {
+    max-width: 150px;
+  }
+  /* .department{
+    background-color: #05054b;
+  } */
+  
+  .department-carousel img{
+    display:inline-block;
+    width: 100px !important;
+  }
+  .department{
+    position: relative;
+  }
+  .department-carousel.owl-carousel .owl-item img {
+    display:inline-block;
+  }
+  .department-carousel.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+  }
+  
+  .department-carousel button.owl-prev {
+    position: absolute;
+    top: 25%;
+    left: -50px;
+  }
+  .department-carousel button.owl-next {
+    position: absolute;
+    top: 25%;
+    right:-50px;
+  }
+  
+  .department-carousel.owl-carousel .owl-nav button.owl-next,
+  .department-carousel.owl-carousel .owl-nav button.owl-prev,
+  .department-carousel.owl-carousel button.owl-dot {
+    background: #fff;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    height:45px;
+    width: 45px;
+    line-height: 1.5;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 4px -15px rgba(0, 0, 0, 0.2);
+  }
+  .department-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #fff;
+    color: #05054b;
+    text-decoration: none;
+  }
+  .department-carousel .item a img{
+      margin-top: 3px;
+      margin-left: 3px;
+      max-height: 80px;
+      max-width: 80px;
+      width: 80px !important;
+      margin: 0 auto;
+      transform: scale(1);
+  }
+  .department-carousel .item a{
+    text-align: center;
+    color: #000;
+    transition: .3s;
+  }
+  .department-carousel .item:hover a p{
+    text-decoration: underline;
+  }
+  .department-carousel .item a{
+    text-align: center;
+    color: #000;
+  }
+  .department-carousel .item a:hover img{
+    transform: scale(1.1);
+  }
+  .owl-nav button:focus{ 
+    outline-style: solid;
+    outline-color:#68A3FF;
+    outline-width: thin;
+  }
+  
+  
+  .when-spend-content{
+    position: relative;
+    text-align: center;
+  }
+  
+  .when-spend-content:after {
+    content: "";
+    height: 44px;
+    width: 1px;
+    position: absolute;
+    right:0;
+    top: 22px;
+    background-color: #d0d0d0;
+  }
+  .when-spend-content.last-content-item:after {
+    content: "";
+    background: none;
+  }
+  .py-30{
+    padding:30px 0px
+  }
+  .pt-70{
+    padding-top: 70px;
+  }
+  .pb-50{
+    padding-bottom: 50px;
+  }
+  
+  /* Protcet */
+  
+  .protect-content {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 0px 15px 15px 0px;
+    min-height: 400px;
+  }
+  .protect-content img{
+    width:100%;
+    border-radius: 15px 0px 0px 3px;
+    border: 1px solid #d0d0d0;
+  }
+  
+  .protect-content-img {
+    position: relative;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 100%;
+  }
+  .protect-content-footer {
+    padding: 20px;
+  }
+  .protect-content-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  .protect-content-footer p{
+    padding: 10px 0px;
+  }
+  .protect-content .shop-btn {
+    background: #05054b;
+    color: #fff;
+    padding: 5px 15px;
+    border: 2px solid #05054b;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  /* FATHER'S DAY GIFT */
+  
+  
+  .father-content {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 0px 15px 15px 0px;
+    min-height:100%;
+  }
+  .father-content img{
+    width:100%;
+    border-radius: 15px 0px 0px 3px;
+    border: 1px solid #d0d0d0;
+  }
+  
+  .father-content-img {
+    position: relative;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 100%;
+  }
+  
+  .father-content-footer {
+    padding: 20px;
+  }
+  .father-content-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  .father-content-footer p{
+    padding: 10px 0px;
+  }
+  .father-content .shop-btn {
+    background: #05054b;
+    color: #fff;
+    padding: 5px 15px;
+    border: 2px solid #05054b;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .father-content .save{
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    background: #c03;
+    border-radius: 0px 15px;
+  }
+  .father-content .save h5{
+    color: #fff;
+    padding: 15px 10px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width:1300px){
+  
+  
+  }
+  @media only screen and (min-width: 320px) and (max-width:991px){
+    .department-carousel button.owl-prev,
+    .department-carousel button.owl-next {
+      position: relative;
+      left: 0px;
+  }
+  
+  
+  }
+  
+  
+  
+  
+   .item-wrapper{
+    border: 1px solid #ddd;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .item-wrapper-img{
+      left: -14px;
+      top: -20px;
+      position: relative;
+      justify-content: center;
+      box-sizing: border-box;
+      order: -1;
+      z-index: 3;
+      height: 100%;
+      width: 100%;
+  }
+  
+  
+  .item-wrapper-img img{
+    width: 100%;
+    border-radius: 15px 0px 0px 3px;
+    border: 1px solid #d0d0d0;
+  }
+  .item-wrapper-contents {
+    padding: 20px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+  }
+  
+   .item-wrapper-contents-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  .item-wrapper-contents-btn{
+    margin-top: auto;
+  }
+  
+  .item-wrapper-contents-copy {
+      margin-bottom: 20px;
+  }
+  .item-wrapper-contents-title {
+    order: 1;
+    margin: 0;
+    color: var(--theme-color);
+  }
+  
+  .item-wrapper-contents-absulate {
+    position: absolute;
+    z-index: 4;
+    right: -1px;
+    top: 0;
+    background: #c03;
+    border-radius: 0px 15px;
+  }
+  
+  .item-wrapper-contents-absulate .save {
+    color: #fff;
+    padding: 15px 15px;
+  }
+  .item-wrapper-contents-btn {
+    order: 4;
+  }
+  .item-wrapper-contents-title{
+    border: 1;
+    margin: 0;
+    color: var(--theme-color);
+  }
+  
